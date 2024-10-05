@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Portfolio Website Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="icon"
+        href="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAMAAzAMBIgACEQEDEQH/xAAbAAABBQEBAAAAAAAAAAAAAAACAQMEBQYAB//EADwQAAEEAQIDBQYDBwIHAAAAAAEAAgMRBBIhBQYxEyJBUdIUF1VhcZMHVpEyQoGhscHRM8IVIyU1UlOS/8QAGgEAAwEBAQEAAAAAAAAAAAAAAAECAwQFBv/EACURAAIDAAICAQQDAQAAAAAAAAABAgMRBBIhMRMFIkFRMmFxI//aAAwDAQACEQMRAD8A8TARBIiAVGYoGyUBcAiAQI4BFS4BFSZOiAIqSgJaTE2JSWkVLgEE6DS6kdLqQGgUlpHS6kC0CklJykmlA9G6SUnCElIHo3SSkZCQhIaY2QhIThCEhBSY3SQhGQhISKQBCGkZQpD0MBEEgRAJkigIgFwCIBMk4BFSUBLSZOnAJaSgIqQJsGkVJQEWlMkABKAi0oq2QLQKXUipLSA0ANS6EbWp0MQJyIzmICFN7JR3sQCYwQhKcIQkJFjZCEhOHqkIQWhohCU4QhISGhshDScISJFihEEgRBMligIwkCIJkhBFSQI2pkM7TS4BOAXsn2RVTtt+ljqnhDnhHGx26+fkic0B1BwcPMKe3BmYDIwD/mDSD4H6f5TuJwrJnLmiEuqwAD1d5X4p4Q7I+2VYF7I5NN03oBSt3cLOBHO3LjInjoNaR1PyUWHCdIDsSn1ZHzR9kJrHO6C072JA3G6fcGwPbpaWkCnX4lD2h1dEYg7N+hoR0U+xjdk7is7aZrdN6trPh9E9DiySSuETHPFmr6kDqaTwlz/ZHMXyUWaNaBvDnOjDtQOptgDz+ahZOL3iC9rSASdWw28Am4kxtWlC9qbIUmdnimCsjri9GyEBTpCEhIsaIQkJwhCUihsoUZQoLCCMIQjCCWEAiAQhOM+aZDOARhqNgBTzYwVeGbkNBvT+amxSud2Y06msGzSdv0QthNbBS8WFzXgnUPAbUqUWc87EMcZnysThUTmdrEXS1q/dLa6fqqmDjnEIw1vtclN6dNv5K65vynS8Kx4TREctBzQQHbLJtG6izVPwdPFjCdP3IuZONZkta8hzhd7rU4UbMjCilZJG0u6knf6ELCMjJO6ueDZ78HIZ2hDorGoEKq7Mfkx5NCcPs8M1XE+XWx40UwzIJXvJJay7ApV//BpI5NDmucdIdtXQ9Fd5OMYsk5eHKxzdDtQDu6Lae7f0VQ7KecQxad9Vl/iR4BdElHTza52etGIomRsmDg4HQ7S7fY0qOLMyWutszhv4LS45kdE+N7SSfM+FLKXpeSBXeKwm2d/H87pbYmblMNDIeB8lo2dlPwiL215sucQ4HofmAFkIX0d1rMLLhPBoo54mECN+k+Oou2KuD0x5C640jLZTKcR4WobhSt8yB5ka6Tuh3Q1t9VXZMTIp5I4pBIxpoPH7w81lJHXB6iOUBRlCVBqAUBThQFBaAIQIyhSLQoRhCEYQSEE41NhOBMhjjdlIjeQRSigp2M7gXStMzkjV8rxx5WdGy42kggmX9lXHEeGwQyjHie2QDo4LF4mS/HLtNbirI6fRWmBxifHyY5XBsgb1Y4dQuiE0ebfTPy4jHPGFLjcLxhRETptQBHXurHwx2fO1tubs8cTwCWWGRSdxp/dFHZZPGZ0tY3pOzwd3BlJcdKXsfhgJrZOyRaW2FbcBwW5udFjOe1gksaj0G1qJxfHlwsmTGyWaJWGi1Lri0Pl2eBcFzgHexz0WH/TJ8PkrybEj7Nz4pBo7TS3Vs4j6LDSPLZAQTsVveVpm8ShbMGh+RAQXN/3fRXVLftZjy6+i+RDEIfZJJPdIP6GgsoSWyam7G17bg8s4YbJ7U8GeVhlaWbgCiQAvEpRTR9EplcV6FGXSSgNBJPh5rY8Kmwn8FxYjHJ7XC2Qu0NvXvYtYZmQ+CQPjcQ4dCPBaPh8cx4VDO+UM1PdR8Sb3/git+SuVBdV/pP45xzK4nhYuNkMjjigBa1wjr9Vm/ZpXdn3QBITpJ2BpWDGz5mWzG7U3I/SLO1nZLzLwqXg2acOTJjn7IAB0braL8ipYQxFK8aSQfA0gKm+yOdhHK1N0h2mtW/6KG4UpZ0RejZQFOFAVJYBQoygSLFCMIAjCYggnY263ACv4poJwChaCGGPKuikxRNdC54kaXNNaPEjzTLB20zRsCTXyUiWN2OXRO0GjVtNq0ZyZIijdC9hkisuaHMDuhB8VY4YdEQC3S5psEtoqvxI5XuY8B/Xuu+ivWdrMXvzGOkle0Brya0/VaROO5+Cs5ja4Y7Q5obZDQ0dKq/8AKoogG0t7znw3BxeXsCbFm7SR7++Sd7rdYbQ4Cw015pWLJF8OyM6ky14DL/1bEbrDLkrU7oFo+euGOfixkvjflRA7s6vb4X/ZY3hj9PE8Qn/3NFLcnEdxCSSWWRzO7TNW/QbfwV1rtFo5+T/yujPTyuUmzfUHcK15f4lLwzMbNGTX7wB6hS+OcDluTIjjIc3/AFG1VfNU+O0giwsGnGR6feu6pnvODnQS8PGdiAdnNFQ7R927xXiWYNJI8itRyhxWPFyo8bPefYpXd4f+J8/49CstxM6Z5W+T3Dr81tbNOKODiUuq2UfwVsjlt8CSGHgrPaI3yzzREMdqoN36rByuXp/CuGQzcucOzpI3SmnscytqF9FFC2TN/qElCEW/2Z/iILpu1jZoZsBvZUDIGpuoDuk0DdX/AAU/KhliBtjtIPWtlA7RzI3saBTvMf0Tkian4WEanfsiz8kDwQaIo+Np3W5rgRsR0TUj3PcXONkmyfMrNnShtwTZRlCVJaAcgRlCkWcEYQAowgAgjb4oAjamQw2mjupDXR9m0jX2n73ko480Td9gqTIkkzUYGdBIMVoxwxsQ0uN3qPn9a/otVl5mHkPibiRNbqABsLHcswY2VxCOLMlMMJ6lguitk3gZbktbC9soYNWx6hdFXlnm8lqMHoxx7DxcfEY3PbKWGTfs62dpNf2WGyMyZmK/FY4dgXaq0i1quaJz2DbcdD5rcw3TSAdvn9VlRC3InDDI2MOP7R6BO/zLCOAsr2RC4Y4t4tiO22mb1+q9Ux3eyvkbI1o7R2lxduK8l5TM1uNxBjWSBwbIO8PGj1W3z87GkkYcUv2aNZPQnxICXHn10f1Kp29Ujcsi4c+OSfTFL3afe9rynmngsfDuJufhkvxJTcZP7vyK0PDMxsc7HPJ09CrnOxoOJ4UsUILoGbtsW6yfBb2JWRPO4znw7Wm9TPMe81mygZIJWgzuHuxXSRyGpA6g0t6jzVPLF3qo77rhlFr2fRVWJ+UVL4XO6L1XgGVFJyvhYvbaXtsU49bcVgsfH8wtHBOMfGa2INLauyfmteO+smc31FfNBR/ss+ZsKCGWBrDD2T+8ZIr+hFWsvmiPWezZojvutu6VnxHiRyZQOzjbGxulob/nxVdliJslRva8EftN/oqsal6MePGUIpSK99b7Jpyl5AZo7vVQ3dVg/B6EHo24oCicgKg2QJQpShtIs4IwU2EYQDHAUQTYRgpkMcCNpTQKMJkslY07oX21xC1HL/Fp3T6ZNUkbqBAdRB6ArIN6qwwJzCe4HGXYs0+a0rk4s5eRWpwaaNnzlhY8fL0WS2Yh7MgMDCDYtpNH9FhHy6HNcdLrG7b/AJFaLJzJOK4Jj4lM8XKH6/mAQq4cKxNLtZyO71JarnsnqMeP1qh1kU2fjyY+UBIGWS13dNgWtNnYsuJodK0tEjdTb8VDg4NizzRti7YsLhcgaSG7+KuOMxtkn7KGQzsiGlrm30/spgmt0q+5ScUiBjznW02tLg8Vmhw34weGxv3NDf8AVZJjhHJThVKzGXiGAtsh46OJ/ktoSw5b61LwS+JgZ8FdZI7LTfh5LMzSNbAYnRNEofbpD+0Pkpftr2u7ruqf9gHEshs0pFFneMThsBtZWcn2Nal8S8+iiMojBNracAjxGcr4ee6MSzhz3Pa47GnEUs9m8Hw2TPj9pkLR47KTA5uPw2PEjI7GPUBIerid62RVqesrlZbBKL/JD41mRzPYyHGZDG2zQ3snrZVWZPoncnUC4OsHyI3UVxF7eSzm9Z11QSikE59+KbcUhQlyg1SBPVASiJQFItAlClKG0izgjCbCIIDBwIwmwUQKZLHAUbSmgUYOyCWhxpop6OV0bg9jiHDxCjAogVWktFrBk3GWucd/mrA5hl4d7K8klr9YcXdflSzzJNPROicj6LRSw550pmjh4lHFhTtib2cklMc5ryKF30/goLeIOiiMbNr6nxVV2tm/NFYIu0dyFx4+2Ovm1OJJ3XRP1OAugoziu1VRB3U6adPGFoY46HRJFxWfEilx4XN7N7gXDSLJCgGY1uSmXOs2m5/oSp3+RJkynPcXOJJSuznkxllNcwUCB/NQ9SElT2Zp8cSRPPJlSufkSlzzuXO6lRnJEhKk1jHBCUJpKSgJQVhxQEpShKRQJKFKUNpFHBEE2CiCQ8HAjBTQKMJktDgKIFNgpbTJwdtKCmwUVpkjgKW02CiRosDtLq+abS2gWB2uvdBaS0AOE7obQrrQAtpElobSGKSkJSEoSUFI4lISuKAlA8FJQEriUJKRSQhK5IShtIoQIwU2CiBRowwUQKAHZKCgWDoKIFNAorTJwcBS2gBSgpiHLSgpsFKCgWDgK60FrrQLA7XWgtLaBYFaS0NpLQPArSEpLSWgYpKQlJaElLR4KSgJXWhJQNIW0JK60JKWlI4lCuJSWjSgQUQK1nuv52+AT/cj9SL3Yc7fAJ/uR+pSPDJgorWqH4Y87ePAJ/uR+pF7sudfy/P92P1KtFhlAUQK1Q/DPnT8v5H3Y/Uu92nOn5fyPuR+pGiwy1pbWqH4ac6X/wBgyPuR+pL7tedPgGR9yP1I0WMy1rgVqfdtzp+X8j7kfqXD8NudPy/kfcj9SNF1Zl7S2tP7tuc/gGR9yP1Jfdrzp8AyPuR+pPQ6sy9rrWn923OnwDI+5H6kvu250+AZH3I/UjQ6sy9pLWp923On5fyPuR+pd7tudPgGR9yP1I0OrMraS1qvdtzn8AyPuR+pJ7tedPgGR/8AcfqS0OrMoSktaz3a85/AMj7kfqSH8M+dPgGR9yP1I0aiZMlDa1vuz51/L+R92P1Lj+GXOv5fyPux+pGjwyJKEla8/hjzr4cvz/cj9SH3Yc7fAJ/uR+pIfUyBKG1sPdfzt8An+5H6knuu52+AT/cj9SRSR//Z">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+</head>
+
+<body>
+    <div class="hero-header" id="header-top">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-n"></i>
+                    <div class="logo-text">Naveen Thomas</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#project">Project</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                <a id="top-button"><i class="fa-solid fa-arrow-up"></i></a>
+                <div class="hero-pic">
+                    <section id="home">
+                        <img src="images/Picsart_24-10-01_19-47-26-146.png" alt="profile pic">
+                </div>
+                <div class="hero-text">
+                    <h5>Hi I'm <span class="input">Frontend Developer</span></h5>
+                    <h1>Naveen Thomas</h1>
+                    <p> Transforming complex problems into elegant code solutions. Crafting innovative,
+                        scalable applications with precision and passion.
+                        Let’s build the future, one line of code at a time
+                    </p>
+
+                    <div class="btn-group">
+                        <!-- <a href="#" class="btn active">Download CV</a> -->
+                        <a href="#contact" class="btn active">Contact</a>
+                    </div>
+
+                    <div class="social">
+                        <a href="https://www.facebook.com/share/5cnHbF48zr1erMgG/"><i
+                                class="fa-brands fa-facebook"></i></a>
+                        <a href="linkedin.com/in/naveen-thomas-816423283"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/n4ve.e/profilecard/?igsh=NWM2NnhscTQ0Z2gz"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://github.com/NaveenThomas21"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="hero-header">
+        <div class="about-container">
+            <section id="about">
+                <div class="me">
+                    <h3> About Me </h3>
+                    <p class="paragraph"> Hi! I’m Naveen Thomas, a passionate frontend developer with a flair for
+                        design.<br><br> I specialize in creating intuitive and visually appealing web applications that
+                        enhance user experiences.<br><br> With a keen eye for detail and a commitment to crafting
+                        seamless interfaces, I strive to bring ideas to life through code. </p>
+
+                </div>
+                <div style="width: 100%; height: 500px; display: flex; align-items: center; justify-content: center;">
+                    <img src="images/6aefff12-246f-4102-b240-b5a80effc6f6.png" alt="aboutme" class="aboutpic">
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- SKILL SECTION -->
+    <div class="hero-header">
+        <section id="skills">
+            <div class="skills-container">
+
+                <h4>Skills</h4>
+                <p>Skills: Proficient in JavaScript, HTML, CSS, and Bootstrap. I create responsive, user-friendly, and
+                    visually appealing web interfaces,<br> <br> bringing ideas to life with clean code and effective
+                    design
+                    principles.</p>
+
+
+            </div>
+
+
+            <div class="main-container p-4">
+                <div class="firstSkill">
+                    <div class="mx-4 p-3">
+                        <div class="first-container"><img src="images/css-3 (2).png" class="ia"></div>
+                        <div class="fir-container css">
+                            <p class="css-section">
+                                CSS (Cascading Style Sheets) It controls layout, color, and font to create visually
+                                appealing sites. Essential for a polished, professional web presence, bringing HTML to
+                                life</p>
+                        </div>
+                    </div>
+                    <div class="mx-5 p-3">
+                        <div class="first-container"><img src="images/html-5 (4).png" class="ic"></div>
+                        <div class="fir-container">
+                            <p class="css-section">
+                                HTML is the foundation of web content. It uses a system of tags to structure and display
+                                text, images, and links, creating the building blocks for websites. Purely essential.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="mx-6 p-3">
+                        <div class="first-container mx-4"><img src="images/java-script (1).png" class="ie"></div>
+                        <div class="fir-container">
+                            <p class="css-section"> JavaScript powers web interactivity. It dynamically updates
+                                content, handles user
+                                inputs, and controls multimedia. Together with HTML and CSS, it forms the trinity of
+                                web development. Essential for modern web experiences.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- project section-->
+        <div class="hero-header">
+            <section id="project">
+                <div class="project-container">
+                    <h2 class="pr-container">Project Section</h2>
+                    <div class="sec-container">
+
+                    </div>
+                    <div class="dintxt-container">
+                        <p>I developed a LinkedIn page interface using HTML and CSS.<br><br> The design includes a
+                            header, sidebar, main feed, and footer, all styled to mirror LinkedIn's layout.<br><br> This
+                            project highlights my ability to create structured and visually appealing web pages,
+                            demonstrating my proficiency in front-end development.</p>
+                    </div>
+
+
+                    <div class="din-container">
+                        <!-- <img src="images/w3schools-logo-icon.png"> -->
+                        <a href="https://naveenthomas21.github.io/linkdin-clone/"><img
+                                src="images/{C864D986-9D00-4656-B422-432D23F2A65F}.png"></a>
+
+                    </div>
+                </div>
+                <!--            
+                          project content here -->
+        </div>
+    </div>
+
+    </section>
+    <!-- contact section -->
+    <div style="border-bottom: 1px solid gray; width: 100%;"></div>
+
+    <div class="hero-header">
+
+        <section id="contact">
+            <div>
+                <div class="cnt-container">
+
+                    <h2 style="color:#007ced;" class="pb-5">Contact Us</h2>
+
+                    <form target="_blank" action="https://formsubmit.co/naveenthomasabc123@email.com" method="POST">
+                        <div class="form-group">
+                            <div class="form-row">
+                                <div class="col">
+                                    <input type="text" name="name" class="form-control" placeholder="Full Name"
+                                        required>
+                                </div>
+                                <div class="col">
+                                    <input type="email" name="email" class="form-control" placeholder="Email Address"
+                                        required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" class="form-control" name="message" rows="10"
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="button btn-lg btn-dark bg-primary">Submit Form</button>
+                    </form>
+                </div>
+        </section>
+    </div>
+    <script src="jv.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+    <script src="bootstrap.js"></script>
+    <script>
+
+        var togglebtn = document.querySelector(".togglebtn");
+        var nav = document.querySelector(".navlinks");
+        var links = document.querySelector(".navlinks li");
+
+        togglebtn.addEventListener("click", function () {
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        })
+
+        var typed = new Typed(".input", {
+            strings: ["Frontend Developer", "Content Creator", "Web Developer"],
+            typedSpeed: 70,
+            backSpeed: 55,
+            loop: true
+        })
+
+    </script>
+</body>
+
+</html>

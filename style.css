@@ -1,0 +1,571 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: poppins, sans-serif;
+    text-decoration: none;
+
+}
+
+body {
+    overflow-x: hidden;
+}
+
+#top-button {
+    background-color: #007ced;
+    color: white;
+    position: fixed;
+    right: 50px;
+    outline: 0;
+    border: 0;
+    bottom: 50px;
+    padding: 20px;
+    border-radius:50%;
+}
+
+.hero-header {
+    width: 100%;
+    min-height: 100vh;
+    background: #222;
+}
+
+.wrapper {
+    width: 1280px;
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    padding: 40px 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo i {
+    height: 45px;
+    width: 45px;
+    background-color: #007ced;
+    border-radius: 50%;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding: 10px;
+    margin-right: 5px;
+    cursor: pointer;
+    text-align: center;
+
+}
+
+.logo .logo-text {
+    font-size: 24px;
+    font-weight: 500;
+    color: #fff;
+}
+
+nav .togglebtn {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 45px;
+    right: 3%;
+    z-index: 5;
+    cursor: pointer;
+    display: none;
+}
+
+nav .togglebtn span {
+    display: block;
+    background-color: #007ced;
+    margin: 5px 0px;
+    width: 100%;
+    height: 3px;
+    transition: 0.3s;
+    transition-property: transform, opacity;
+
+}
+
+nav .navlinks {
+    list-style-type: none;
+}
+
+nav .navlinks li {
+    display: inline-block;
+}
+
+nav .navlinks li a {
+    color: #e5e5e5;
+    margin-right: 2.5rem;
+    transition: color 0.3s ease;
+}
+
+nav .navlinks li a:hover {
+    color: #007ced;
+}
+
+
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 4rem;
+}
+
+.container .hero-pic {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 15px solid #444;
+    box-shadow: 5px 7px 25px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width:980px) and (min-width:767px) {
+    .hero-pic {
+        border: 20px solid red;
+    }
+}
+
+.hero-pic img {
+    height: 100%;
+    width: 100%;
+    transition: 0.5s;
+}
+
+.hero-pic img:hover {
+    transform: scale(1.2);
+}
+
+.hero-text {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-text h5 {
+    color: #e5e5e5;
+    font-size: 14px;
+}
+
+.hero-text h5 span {
+    color: #007ced;
+    font-size: 16px;
+}
+
+.hero-text h1 {
+    color: #007ced;
+    font-size: 3rem;
+}
+
+.hero-text p {
+    color: #e5e5e5;
+
+}
+
+.btn-group {
+    margin: 45px 0;
+}
+
+.btn-group .btn {
+    border-color: #d5d5d5;
+    color: #fff;
+    background-color: #333;
+    padding: 12px 25px;
+    margin: 5px 0px;
+    margin-right: 7px;
+    border-radius: 30px;
+    border: 2px solid #e5e5e5;
+    box-shadow: 0 10px 10px -8px rgb(0 0 0 / 78%);
+}
+
+
+.btn.active {
+    background: #007ced;
+    border: 0;
+}
+
+.btn.active:hover {
+    background-color: #180404;
+    color: #34587c;
+    border: none;
+    outline: none;
+    transition: 0.5s ease-in-out;
+}
+
+.hero-text .social i {
+    color: #e5e5e5;
+    font-size: 18px;
+    margin-right: 10px;
+    transition: 0.5s;
+}
+
+.hero-text .social i:hover {
+    color: #007ced;
+    transform: rotate(360deg);
+}
+
+
+@media(max-width:930px) {
+    nav .togglebtn {
+        display: initial;
+    }
+
+    .click {
+        top: 45px;
+    }
+
+    .click span {
+        position: absolute;
+        margin-top: 12px
+    }
+
+    .click span:first-child {
+        transform: rotate(-40deg);
+    }
+
+    .click span:nth-child(2) {
+        opacity: 0;
+        margin: 0;
+    }
+
+    .click span:last-child {
+        transform: rotate(45deg);
+        top: 0;
+    }
+
+    nav .navlinks {
+        position: absolute;
+        top: 110px;
+        right: -100%;
+        bottom: 0;
+        width: 60%;
+        height: 100vh;
+        background-color: #222;
+        z-index: 3;
+        box-shadow: 5px 13px 30px rgba(0, 0, 0, 0.1);
+        transition: 0.5s;
+        padding: 25px 0px;
+    }
+
+    nav .navlinks li {
+        display: block;
+    }
+
+    nav .navlinks li a {
+        display: block;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    nav .navlinks.open {
+        right: 0;
+    }
+}
+
+@media(max-width:768px) {
+    .container {
+        flex-direction: column;
+        padding-top: 2rem
+    }
+
+    .hero-text {
+        padding: 40px 0px;
+    }
+}
+
+.about-container {
+    color: white;
+    outline: 1px solid white;
+    padding: 10px;
+
+}
+
+.paragraph {
+    transition: background-color 0.3s ease;
+    background-color: #222;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.paragraph:hover {
+    background-color: #2846ee;
+}
+
+
+.aboutpic {
+
+    width: 100%;
+    max-width: 690px;
+    height: 400px;
+    transition: transform 1s ease;
+}
+
+.aboutpic:hover {
+    animation: rotate 5s infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(10deg);
+    }
+
+    100% {
+        transform: rotate(10deg);
+    }
+}
+
+
+
+.skills {
+    color: antiquewhite;
+    /* border: 2px solid white; */
+
+}
+
+.skills-container {
+    border: 1px solid white;
+    background-color: #2846ee;
+    color: white;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+.ia {
+    transition: transform 0.5s ease;
+}
+
+.ia:hover {
+    transform: scale(0.5);
+
+}
+
+.ib {
+    transition: transform 0.5s ease;
+}
+
+.ib:hover {
+    transform: scale(0.5);
+
+}
+
+
+.ic {
+    transition: transform 0.5s ease;
+}
+
+.ic:hover {
+    transform: scale(0.5);
+
+}
+
+
+.ie {
+    transition: transform 0.5s ease;
+}
+
+.ie:hover {
+    transform: scale(0.5);
+
+}
+
+div.fle-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: antiquewhite;
+    /* border: 2px solid white; */
+
+
+
+}
+
+
+.first-container {
+    display: flex;
+    justify-content: center;
+    /* border: 3px solid rgb(14, 33, 204); */
+}
+
+.fir-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(28, 24, 248);
+    overflow: hidden;
+    /* background-color:#007ced;  ; 
+     /* border: 1px solid white; */
+}
+
+
+.css-section {
+    /* background-color: red; */
+    width: 800px;
+    height: auto;
+    text-align: center;
+}
+
+.pr-container {
+    color: white;
+}
+
+.din-container {
+    display: flex;
+    justify-content: center;
+    transform: scale(0.8);
+}
+
+.din-container img {
+    border: 10px solid white;
+    transform: scale(0.7);
+    max-width: 100%;
+    height: auto;
+    width: auto;
+    transition: transform 0.3s, border-color 0.3s;
+    /* Smooth transition for hover effects */
+}
+
+.din-container img:hover {
+    border-color: #2846ee;
+    /* Change border color on hover */
+    transform: scale(0.8);
+    /* Slightly enlarge image on hover */
+}
+
+.dintxt-container {
+    color: whitesmoke;
+    background-color: #056dcf;
+    border: 1px solid white;
+}
+
+.project-section {
+    background-color: #222222;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 300px;
+    /* Adjust height as needed */
+    position: relative;
+}
+
+/*   
+  .ball {
+    width: 50px;
+    height: 50px;
+    background-color: #ff6347;
+    position: absolute;
+    bottom: 0;
+    animation: bounce 2s infinite;
+  }
+  
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-150px);
+    }
+    60% {
+      transform: translateY(-75px);
+    }
+  } */
+
+.con-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid white;
+    height: 100vh;
+
+
+}
+
+button:hover {
+    background-color: #007ced;
+    color: #e5e5e5;
+    cursor: pointer;
+}
+
+
+.secondSkill {
+    display: flex;
+}
+
+.fir-container {
+
+    border: 2px solid beige;
+    border-radius: 50px;
+    background-color: rgb(6, 11, 51);
+
+}
+
+.fir-container p {
+    padding: 3%;
+}
+
+h1 {
+    text-align: center;
+    margin: 35px 0 20px 0 !important;
+}
+
+.cnt-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* Full height */
+    flex-direction: column;
+    width: 100%;
+    /* Full width */
+    padding: 20px;
+    /* Padding for spacing */
+    box-sizing: border-box;
+}
+
+.cnt-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    /* Optional: maximum width for the form */
+}
+
+.form-group {
+    width: 100%;
+    margin-bottom: 15px;
+    /* Spacing between form elements */
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form-control,
+.button {
+    width: 100%;
+    background-color: red;
+}
+
+.form-control button:hover {
+    background-color: red;
+}
